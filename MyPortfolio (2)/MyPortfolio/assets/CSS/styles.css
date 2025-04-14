@@ -1,0 +1,366 @@
+* {
+  margin: 100;
+  padding: 100;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+/* Set the default font-family for the entire page */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+/* Styles for the fixed navigation bar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 30px 0;
+  font-family: "Ubuntu", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar .menu li a {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+
+/* Home */
+/* Styles for the home section */
+.home .home-content {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Adjust the height as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* Set the color of the text for better contrast */
+}
+
+.home .home-content h1 {
+  font-size: 50px;
+  margin-bottom: 20px; /* Add some spacing below the heading */
+}
+
+.home .text-3 {
+  font-size: 40px;
+  margin-bottom: 20px; /* Add some spacing below the description */
+}
+
+.home a {
+  display: inline-block;
+  background-color: #7393b9;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 20px; /* Add some spacing above the button */
+}
+.home {
+  background-image: url(../images/PrairieStar.jpg);
+
+}
+
+.home {
+  display: flex;
+  background: #1e3551;
+  height: 100vh;
+  color: #fff;
+  min-height: 500px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.home .max-width {
+  width: 100%;
+  display: flex;
+}
+
+.home .home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .home-content h1 {
+  font-size: 50px;
+}
+
+.home .home-content .text-3 {
+  font-size: 40px;
+  margin: 5px 0;
+}
+
+/* Services and Projects */
+/* Styles for the services and projects sections */
+.services,
+
+.services .serv-content,
+.projects .serv-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/*boot strap cards*/
+.services .serv-content .card,
+.projects .serv-content .card {
+  width: calc(33% - 20px);
+  background: #3481de;
+  text-align: center;
+  border-radius: 10px;
+  padding: 50px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+/*boot strap cards hover function and color*/
+.services .serv-content .card:hover,
+.projects .serv-content .card:hover {
+  background: #1e3551;
+}
+/*boot strap cards font*/
+.services .serv-content .card .text,
+.projects .serv-content .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+
+/* Skills section styles */
+.skills {
+  background: radial-gradient(#5491d3, white);
+}
+/* Skills section styles */
+
+
+
+/* Hover effect */
+.btn:hover {
+  background-color: #143c69; /* Change the background color on hover */
+}
+
+/* Social Buttons */
+.social-menu ul {
+  position: absolute;
+  left: 13%; /* how far buttons are from the left */
+  padding: 0;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+/*formatting the skills section making sure everything is lined up correctly*/
+.skills .skills-content {
+  display: flex;
+}
+
+.skills .column {
+  width: calc(50% - 30px);
+}
+
+.skills .left .text {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.skills .left p {
+  text-align: justify;
+}
+
+
+.skills .right .bars {
+  margin-bottom: 15px;
+}
+
+.skills .right .info {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skills .right span {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.skills .right .line {
+  height: 5px;
+  width: 100%;
+  background: lightgrey;
+  position: relative;
+}
+
+.skills .right .line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #1e3551;
+}
+
+/* Adding border around the image */
+
+
+.icons .row .profile-image {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  display: block;
+  margin: 10px auto; /* Center the image within the container */
+  border: 5px solid #1e3551; /* Adding border around the image */
+}
+
+/* Contact section styles */
+.contact {
+  background: radial-gradient(#7393b9, rgb(82, 111, 205));
+}
+
+.contact .contact-content {        /*contact class*/
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.contact .contact-content .column {     /*contact class*/
+  width: calc(50% - 30px);
+}
+
+.contact .contact-content .text {     /*contact class*/
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact .contact-content .left p {     /*contact class*/
+  text-align: justify;
+}
+
+.contact .contact-content .left .icons {    /*contact class*/
+  margin: 10px 0;
+}
+
+.contact .contact-content .row {    /*contact class*/
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+/*contact class*/
+.contact .contact-content .row .info {    /*contact class*/
+  margin-left: 30px;
+}
+
+.contact .contact-content .row i {    /*contact class*/
+  font-size: 25px;
+  color: #0a0a0a;
+}
+
+
+.contact .contact-content .info .sub-title {
+  color: #121212;
+}
+/* Contact message box, the sizes of the boxes */
+.contact .right form .field,
+.contact .right form .fields .field {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.contact .right form .textarea {
+  height: 80px;
+  width: 100%;
+}
+
+.contact .right form .name {
+  margin-right: 10px;
+}
+/* Contact Message me box with the colors font, and size of box, how far apart they are the borders around, the font size, the */
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+  height: 100%;
+  width: 90%;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+
+
+.contact .right form .button-area button {   /* Send Message Button */
+  color: #fff;
+  display: block;
+  width: 160px !important;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  background: #1e3551;
+  border: 2px solid #1e3551;
+  transition: all 0.3s ease;
+}
+
+
+
+/* Social Buttons */
+.social-menu ul {
+  position: absolute;
+  left: 13%;    /* how far buttons are from the left */
+  padding: 0;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.social-menu ul li {/*how far apart buttons are */
+  list-style: none;
+  margin: 0 15px;
+}
+
+
+
+
+.social-menu ul li a {   /*Process underconstruction.  W*/
+  left: px;
+  right: 12px;
+  padding-top: 3px;
+  position: relative;
+  display: block;
+  width: 30px;/* width and height of buttons */
+  height: 30px;
+  border-radius: 50%;
+  background-color: #17209c;/* Color */
+  text-align: center;
+  transition: 0.6s;
+  box-shadow: 0 5px 4px rgba(11, 11, 11, 0.5);/* button shadow*/
+}
